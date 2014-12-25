@@ -79,6 +79,8 @@ BRICK = tex_coords((2, 0), (2, 0), (2, 0))
 STONE = tex_coords((2, 1), (2, 1), (2, 1))
 PLANK_ACACIA = tex_coords((3, 1), (3, 1), (3, 1))
 PLANK_OAK = tex_coords((3, 0), (3, 0), (3, 0))
+SMOOTH_STONE = tex_coords((0, 2), (0, 2), (0, 2))
+WATER = tex_coords((1, 2), (1, 2), (1, 2))
 
 FACES = [
     ( 0, 1, 0),
@@ -442,7 +444,7 @@ class Window(pyglet.window.Window):
         self.dy = 0
 
         # A list of blocks the player can place. Hit num keys to cycle.
-        self.inventory = [BRICK, GRASS, SAND, PLANK_ACACIA, PLANK_OAK]
+        self.inventory = [BRICK, GRASS, SAND, PLANK_ACACIA, PLANK_OAK, SMOOTH_STONE, WATER]
 
         # The current block the user can place. Hit num keys to cycle.
         self.block = self.inventory[0]
@@ -700,13 +702,13 @@ class Window(pyglet.window.Window):
         modifiers : int
             Number representing any modifying keys that were pressed.
         """
-        if symbol == key.W:
+        if symbol == key.K:
             self.strafe[0] += 1
-        elif symbol == key.S:
+        elif symbol == key.J:
             self.strafe[0] -= 1
-        elif symbol == key.A:
+        elif symbol == key.H:
             self.strafe[1] += 1
-        elif symbol == key.D:
+        elif symbol == key.L:
             self.strafe[1] -= 1
 
     def on_resize(self, width, height):

@@ -9,22 +9,24 @@ and build my only minecraft/sim city/lego throwback while learning a ton along t
 
 ### Moving
 
-- W: forward
-- S: back
-- A: strafe left
-- D: strafe right
-- Mouse: look around
-- Space: jump
-- Tab: toggle flying mode
+- K: Forward
+- J: Back
+- H: Strafe left
+- L: Strafe right
+- Mouse: Look around
+- Space: Jump
+- Tab: Toggle flying mode
 
 ### Building
 
 - Selecting type of block to create:
-    - 1: brick
-    - 2: grass
-    - 3: sand
+    - 1: Brick
+    - 2: Grass
+    - 3: Sand
     - 4: Acacia
     - 5: Oak
+    - 6: Smooth Stone
+    - 7: Water-ish
 - Mouse left-click: remove block
 - Mouse right-click: create block
 
