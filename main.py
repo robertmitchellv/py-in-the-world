@@ -456,7 +456,7 @@ class Window(pyglet.window.Window):
         self.model = Model()
 
         # The label that is displayed in the top left of the canvas.
-        self.label = pyglet.text.Label('', font_name='Arial', font_size=18,
+        self.label = pyglet.text.Label('', font_name='Helvetica Neue', font_size=18,
             x=10, y=self.height - 10, anchor_x='left', anchor_y='top',
             color=(0, 0, 0, 255))
 
@@ -671,13 +671,13 @@ class Window(pyglet.window.Window):
         modifiers : int
             Number representing any modifying keys that were pressed.
         """
-        if symbol == key.W:
+        if symbol == key.K:
             self.strafe[0] -= 1
-        elif symbol == key.S:
+        elif symbol == key.J:
             self.strafe[0] += 1
-        elif symbol == key.A:
+        elif symbol == key.H:
             self.strafe[1] -= 1
-        elif symbol == key.D:
+        elif symbol == key.L:
             self.strafe[1] += 1
         elif symbol == key.SPACE:
             if self.dy == 0:
